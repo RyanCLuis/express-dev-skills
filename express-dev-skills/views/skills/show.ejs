@@ -8,15 +8,9 @@
 </head>
 <body>
     <a href="/">Home</a>
-    <h1>Skills</h1>
-    <ul>
-        <% skills.forEach(function(s) { %>
-            <li>
-                <a href="/skills/<%= s.id %>"><%= s.skill %></a>
-                -
-                <%= s.helpful ? 'Yes' : 'No' %>
-            </li>
-        <% }) %>
-    </ul>
+    |
+    <a href="/skills">All Skills</a>
+    <h3><%= skill.skill %></h3>
+    <h3>Helpful: <%= skill.helpful ? 'Yes' : 'No' %></h3>
 </body>
 </html>
